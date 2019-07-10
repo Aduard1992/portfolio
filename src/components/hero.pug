@@ -1,16 +1,12 @@
-section.section.hero
+section.section.hero#parallax
+  .parallax
+    include parallax
   .container
     .header__wrapper
       include header
     .info
-      h2.info__title
-        | Немихин Эдуард
-      h3.info__text
-        | Личный сайт
-        br 
-        | веб разработчика
+      include info
     .scroll
       .scroll__text Скролл
       button.scroll__button
         +icon('scroll', 'scroll__button-svg')
-    include about 
